@@ -26,23 +26,22 @@ const eslintConfig = [
       "no-unused-vars": "error",
       "no-undef": "error",
       "no-var": "error",
-      
+
       // Best Practices
       "prefer-const": "error",
-      "eqeqeq": ["error", "always"],
+      eqeqeq: ["error", "always"],
       "no-console": "warn",
-      
+
       // Style Consistency
-      "semi": ["error", "always"],
-      "quotes": ["error", "single"],
-      "indent": ["error", 2],
-      
+      semi: ["error", "always"],
+      quotes: ["error", "single"],
+      indent: ["error", 2],
+
       // Modern JavaScript
       "arrow-body-style": ["error", "as-needed"],
-      "prefer-arrow-callback": "error"
+      "prefer-arrow-callback": "error",
     },
   },
-
 ];
 
 export default eslintConfig;

@@ -4,25 +4,25 @@
 var x = 5;
 
 // Should trigger 'no-unused-vars'
-let unused = 'this variable is never used';
+let unused = "this variable is never used";
 
 // Should trigger 'eqeqeq'
-if (x == '5') {
-  console.log('equal'); // Should trigger 'no-console'
+if (x == "5") {
+  console.log("equal"); // Should trigger 'no-console'
 }
 
 // Should trigger 'quotes' and 'semi'
-let str = "double quotes"
+let str = "double quotes";
 
 // Should trigger 'indent'
 function badIndent() {
-   return {
-  foo: 'bar'
-   };
+  return {
+    foo: "bar",
+  };
 }
 
 // Should trigger 'prefer-arrow-callback'
-[1, 2, 3].map(function(n) {
+[1, 2, 3].map(function (n) {
   return n * 2;
 });
 
@@ -31,14 +31,14 @@ const correctVar = 5;
 
 const arr = [1, 2, 3].map((n) => n * 2);
 
-if (x === '5') {
-  const result = 'equal';
+if (x === "5") {
+  const result = "equal";
 }
 
-const properString = 'single quotes';
+const properString = "single quotes";
 
 function properIndent() {
   return {
-    foo: 'bar'
+    foo: "bar",
   };
 }
