@@ -1,5 +1,7 @@
 added eslint and some rules, along with a test file to see how it reacts on the console, npm run lint to execute
+
 added prettier, messy.js was a test file, npm run clean to execute
 
 added jest, sum and sum.test.js are test files, npm test to execute
 
+gonna start on doing pipeline
