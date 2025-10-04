@@ -7,5 +7,5 @@ test("testar a soma", () => {
 const subtract = require('./subtract');
 
 test("testar a subtração", () => {
-    expect(subtract(10,10)).toBe(6);
+    expect(subtract(10,4)).toBe(6);
 });
