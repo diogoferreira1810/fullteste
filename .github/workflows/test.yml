@@ -1,4 +1,4 @@
-name: Test Pipeline
+name: WorkFlow
 
 on:
   push:
@@ -10,21 +10,51 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v4
-    
-    - name: Use Node.js
-      uses: actions/setup-node@v3
-      with:
-        node-version: '20.x'
-        
-    - name: Install dependencies
-      run: npm ci
+      - uses: actions/checkout@v4
       
-    - name: Run jest tests
-      run: npm test
+      - name: Use Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20.x'
+          
+      - name: Install dependencies
+        run: npm ci
+        
+      - name: Run jest tests
+        run: npm test
 
   prettier:
     runs-on: ubuntu-latest
     steps:
-    - name: Run Prettier
-      run: npm run clean
+      - uses: actions/checkout@v4
+
+      - name: Use Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20.x'  
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run Prettier
+        run: npm run clean
+
+  build:
+    runs-on: ubuntu-latest
+    needs: [test, prettier]
+    if: github.ref == 'refs/heads/main'
+    strategy:
+      fail-fast: true
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Use Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20.x'  
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build project
+        run: npm run build
