@@ -6,7 +6,9 @@ export default function Home() {
     <div className={styles.page}>
       <main className={styles.main}>
         <h1>Olá</h1>
-        <img src="/next.svg"/>
+        <p>This is a simple HTML test page. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+    Curabitur vel urna ac libero tempor tincidunt. Integer tincidunt, nunc sit amet 
+    condimentum interdum, elit orci varius nunc, vitae fermentum nisl velit sed felis.</p>
       </main>
       <footer className={styles.footer}>
         <h3>Footer text</h3>
