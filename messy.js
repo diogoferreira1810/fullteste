@@ -6,8 +6,8 @@ function messyFunction(a, b, c) {
 }
 
 const obj = {
-  prop1: "hello",
-  prop2: "world",
+  prop1: 'hello',
+  prop2: 'world',
   nested: {x: 1,y: 2,},
 };
 
