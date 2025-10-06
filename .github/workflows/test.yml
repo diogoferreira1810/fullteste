@@ -22,6 +22,9 @@ jobs:
 
       - name: Run jest tests
         run: npm test
+      - name : Run jest coverage
+        run: npm run coverage
+        
   prettier:
     runs-on: ubuntu-latest
     steps:
