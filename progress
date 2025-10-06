@@ -5,3 +5,4 @@ added prettier, messy.js was a test file, npm run clean to execute
 added jest, sum and sum.test.js are test files, npm test to execute
 
 gonna start on doing pipeline
+added two steps on test.yml
