@@ -10,6 +10,7 @@ export default function Home() {
           Curabitur vel urna ac libero tempor tincidunt. Integer tincidunt, nunc sit amet 
           condimentum interdum, elit orci varius nunc, vitae fermentum nisl velit sed felis.
     </p>
+    <h4>Adding more text to see stuff happening</h4>
       </main>
       <footer className={styles.footer}>
         <h3>Footer text</h3>
