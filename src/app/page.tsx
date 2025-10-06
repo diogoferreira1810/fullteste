@@ -7,8 +7,9 @@ export default function Home() {
       <main className={styles.main}>
         <h1>Olá</h1>
         <p>This is a simple HTML test page. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-    Curabitur vel urna ac libero tempor tincidunt. Integer tincidunt, nunc sit amet 
-    condimentum interdum, elit orci varius nunc, vitae fermentum nisl velit sed felis.</p>
+          Curabitur vel urna ac libero tempor tincidunt. Integer tincidunt, nunc sit amet 
+          condimentum interdum, elit orci varius nunc, vitae fermentum nisl velit sed felis.
+    </p>
       </main>
       <footer className={styles.footer}>
         <h3>Footer text</h3>
