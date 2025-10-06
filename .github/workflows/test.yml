@@ -63,4 +63,8 @@ jobs:
         env:
           NETLIFY_AUTH_TOKEN: ${{ secrets.TOKEN }}
           NETLIFY_SITE_ID: ${{ secrets.ID }}
+<<<<<<< HEAD
         run: npx netlify-cli deploy --site $NETLIFY_SITE_ID --auth $NETLIFY_AUTH_TOKEN --prod
+=======
+        run: npx netlify-cli deploy --site $NETLIFY_SITE_ID --auth $NETLIFY_AUTH_TOKEN --prod
+>>>>>>> 67b8eb783d84bcf56e2d450b02312e7a68655e67
