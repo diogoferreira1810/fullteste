@@ -8,7 +8,9 @@
     "start": "next start",
     "lint": "eslint",
     "clean": "prettier --write .",
-    "test": "jest"
+    "test": "jest",
+    "coverage": "jest --coverage"
+
   },
   "dependencies": {
     "netlify-cli": "^23.9.1",
