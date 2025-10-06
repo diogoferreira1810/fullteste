@@ -18,6 +18,9 @@ export default function Home() {
             teste
           </li>
           <li>tAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</li>
+          <li>tAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</li>
+          <li>tAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</li>
+          <li>tAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</li>
         </ol>
 
         <div className={styles.ctas}>
